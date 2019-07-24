@@ -13,6 +13,8 @@ pwsh
 
 On the PowerShell:
 
+Notice that the PowerShell commands support tab completion.
+
 ```powershell
 # Install the Azure AD module
 Install-Module -Name Az -AllowClobber
@@ -23,11 +25,11 @@ Connect-AzAccount
 
 # Get available AD tenants
 Get-AzTenant
-
 # Get available subscriptions
 Get-AzSubscription
-# Set the subsctiption you want to use
-Set-AzContext -Subscription "IT Team" -Name "ITTeam"
+
+# Context is a container for login credentials, like username, Azure AD tenant and subscription. So th set the Context to which your commands affect, use the following commands
+
 # List the different Contexts you have
 Get-AzContext -ListAvailable
 # Show the currently active context
